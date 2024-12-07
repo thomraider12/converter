@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor Universal | Tomás Afonso</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+  </header>
+  <main>
+    <section id="converter">
+      <label for="converter-type">Escolha o tipo de conversão:</label>
+      <select id="converter-type">
+        <option value="moeda">Moeda</option>
+        <option value="distância">Distância</option>
+        <option value="altura">Altura</option>
+        <option value="peso">Peso</option>
+        <option value="volume">Volume</option>
+        <option value="tempo">Tempo</option>
+        <option value="temperatura">Temperatura</option>
+        <option value="velocidade">Velocidade</option>
+      </select>
+
+      <label for="value">Valor a converter:</label>
+      <input type="number" id="value" placeholder="Digite o valor">
+
+      <label for="from-unit">De:</label>
+      <select id="from-unit"></select>
+
+      <label for="to-unit">Para:</label>
+      <select id="to-unit"></select>
+
+      <button id="convert-btn">Converter</button>
+    </section>
+
+    <section id="result">
+      <h2>Resultado:</h2>
+      <p id="result-text">Escolha uma conversão para começar.</p>
+    </section>
+
+    <footer class="footer">&copy; <a href="https://thomraider12.github.io/thomraider12">Tomás Afonso</a>.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
